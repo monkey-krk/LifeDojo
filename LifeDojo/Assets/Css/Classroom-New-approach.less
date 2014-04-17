@@ -1,0 +1,643 @@
+﻿/*#region LeftSidebar */
+
+.LeftSidebar {
+    display:block;
+    background-color: #e6e8e2;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #d7d7d7, inset -1px -1px 1px rgba(255,255,255,0.2);
+    padding: 35px 20px;
+    font-size: 13px;
+    color: #0f5f5b;
+    margin-bottom: 30px;
+    
+    .LeftSidebarTitle {
+        display:inline-block;
+        padding: 0 16px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    #LeftSidebarShrinkButtonMobile {
+        display:none;
+
+    }
+
+    ol {
+        margin: 45px 0 0 0 ;
+        padding: 0;
+        list-style: none;
+        counter-reset: chapter-counter;
+
+        & > li {
+            position: relative;
+            margin: 0;
+            padding: 10px 0;
+            counter-increment: chapter-counter;
+
+            &:before {
+                content: counter(chapter-counter)".";
+                position: absolute;
+                top: 10px;
+                left: 0;
+            }
+
+            & > a {
+                display: inline-block;
+                color: #0f5f5c;
+                text-transform: uppercase;
+                margin: 0 40px 6px 19px;
+            }
+
+            .time {
+                position: absolute;
+                top: 10px;
+                right: 0;
+            }
+
+            &.completed, &.completed > a {
+                color: #83a7a5;
+            }
+
+            & > ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                & > li {
+                    position: relative;
+                    margin: 0;
+                    padding: 6px 0;
+
+                    a {
+                        color: #83a7a5;
+                    }
+
+                    &.completed a {
+                        display: block;
+                        width: 90%;
+                        color: #6faf47;
+                        opacity: 0.5;
+
+                        &:after {
+                            content: "";
+                            font-family: 'Flaticons Stroke';
+                            speak: none;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            line-height: 1;
+                            -webkit-font-smoothing: antialiased;
+                            display:block;
+                            position: absolute;
+                            top: 9px;
+                            right: 0;
+                        }
+                        &:hover {
+                            &:after {
+                                text-decoration:none!important;
+                            }
+                        }
+                    }
+
+                    &.next-to-play a {
+                        display: block;
+                        width: 90%;
+                        color: #0f5f5c;
+
+                        &:after {
+                            content: "";
+                            font-family: 'Flaticons Stroke';
+                            speak: none;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            line-height: 1;
+                            -webkit-font-smoothing: antialiased;
+                            position: absolute;
+                            top: 9px;
+                            right: 0;
+                            &:hover {
+                            &:after {
+                                text-decoration:none!important;
+                            }
+                        }
+                        }
+                    }
+
+                    &.playing a {
+                        display: block;
+                        width: 90%;
+                        color: #6fb048;
+
+
+                        &:after {
+                            content: "";
+                            font-family: 'Flaticons Solid';
+                            speak: none;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            line-height: 1;
+                            -webkit-font-smoothing: antialiased;
+                            position: absolute;
+                            top: 9px;
+                            right: 0;
+                            &:hover {
+                            &:after {
+                                text-decoration:none!important;
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .LeftSidebar {
+        font-size: 12px;
+        padding: 25px 10px;
+    }
+}
+@media (max-width: 767px) {
+    .LeftSidebar {
+        .LeftSidebarTitle {
+            display: inline-block;
+            padding: 0 16px;
+        }
+
+        #LeftSidebarShrinkButtonMobile {
+            display: inline-block;
+        }
+
+        ol {display:none;}
+    }
+}
+
+/*#endregion */
+
+/*#region TopBar */
+
+.TopBar {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px #e0e0e0;
+    width: 100%;
+    padding: 20px;
+    color: #0f5f5b;
+    font-size: 25px;
+    margin-bottom:15px;
+
+    i {
+        display: inline-block;
+        color: #adc4c3;
+        font-size: 18px;
+    }
+    span {
+        margin-left:22px;
+    }
+    #LeftSidebarShrinkButton {
+        display:inline-block;
+        cursor:pointer;
+    }
+    .TB-IconMenu {
+        margin:0 -8px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .TopBar {
+        font-size: 22px;
+        i {
+            font-size: 16px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .TopBar {
+        font-size: 18px;
+        i {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .TopBar {
+        font-size: 16px;
+        #LeftSidebarShrinkButton {
+            display:none;
+        }
+        span {
+            margin-left:0px;
+        }
+    }
+}
+
+/*#endregion */
+
+/*#region VideoBox */
+
+.video-js {
+
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    overflow:hidden;
+
+    box-shadow: 0 1px 3px #e0e0e0;
+    margin-bottom:15px;
+}
+
+@media (min-width: 1200px) {
+    .VideoSize.small {
+        width:650px!important;
+        height:366px!important;
+    }
+    .VideoSize.big {
+        width:870px!important;
+        height:489px!important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .VideoSize.small {
+        width:538px!important;
+        height:303px!important;
+    }
+    .VideoSize.big {
+        width:720px!important;
+        height:405px!important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .VideoSize.small {
+        width:553px!important;
+        height:311px!important;
+    }
+    .VideoSize.big {
+        width:740px!important;
+        height:416px!important;
+    }
+}
+
+@media (max-width: 767px) {
+    .VideoSize.small, .VideoSize.big {
+        margin:0 auto 15px auto;
+        width:470px!important;
+        height:264px!important;
+    }
+}
+
+@media (max-width: 479px) {
+    .VideoSize.small, .VideoSize.big {
+        margin:0 auto 15px auto;
+        width:310px!important;
+        height:174px!important;
+    }
+    
+}
+
+/*#endregion */
+
+/*#region Quiz */
+
+.Quiz {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px #e0e0e0;
+    margin-bottom:15px;
+    
+    padding: 20px;
+    text-align:center;
+    width: 100%;
+    display:table-cell;
+    vertical-align:middle;
+
+    .QuizQuestionNo {
+        border:1px solid #0f5f5c;
+        border-radius:50%;
+        font-size:40px;
+        width:60px;
+        height:60px;
+        margin:0 auto 15px auto;
+    }
+    .QuizTitle {
+        font-size:22px;
+        padding:15px 0;
+    }
+    .QuizSubTitle {
+        font-size:14px;
+        color:#83a7a5;
+        padding:15px 0;
+    }
+    .QuizStartButton {
+        display:block;
+        color: #fff;
+        background-color: #6fb048;
+        border-color: #6fb048;
+        margin:20px auto 0 auto;
+        &:hover {
+            background-color: #639e40;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .Quiz.small {
+        height:366px;
+    }
+    .Quiz.big {
+        height:489px;
+        .QuizTitle, .QuizSubTitle {
+            padding:25px 0!important;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .Quiz.small {
+        height:303px;
+        .QuizTitle, .QuizSubTitle {
+            padding:5px 0!important;
+        }
+    }
+    .Quiz.big {
+        height:405px;
+        .QuizTitle, .QuizSubTitle {
+            padding:25px 0!important;
+        }
+    }
+    .QuizQuestionNo {
+        margin:0 auto 5px auto!important;
+    }
+    .QuizStartButton {
+         margin:10px auto 0 auto!important;
+    }
+}
+
+@media (max-width: 991px) {
+    .Quiz.small, .Quiz.big {
+        display:block!important;
+        height:auto!important;
+        .QuizTitle, .QuizSubTitle {
+            padding:5px 0!important;
+        }
+    }
+    
+}
+
+/*#endregion */
+
+/*#region Take Action / Learn More */
+
+.TA-LM-tabs {
+    border-bottom: 1px solid transparent;
+
+    & > li {
+        width:50%;
+        &:last-child {
+                width:49%;
+                margin-left:1%;
+        }
+
+        & > a {
+            font-size:16px;
+            color: #83a7a5;
+            background-color: #f6f8f4;
+            text-align:center;
+            border: none!important;
+            margin-right:0;
+            box-shadow: 0 -1px 2px #e0e0e0;
+
+            span {
+                display:inline-block;
+                border:1px solid #83a7a5;
+                border-radius:50%;
+                font-size:15px;
+                width:23px;
+                height:23px;
+                margin-right:7px;
+            }
+        }
+
+        & > a:hover {
+            color: #0f5f5c;
+            background-color: #e6e8e2;
+        }
+
+        &.active > a {
+            color: #0f5f5c;
+        }
+
+    }
+}
+
+.TA-LM-content {
+    margin-bottom:15px;
+
+    & >.active {
+        background-color:#fff;
+        border-radius: 0px 0px 5px 5px;        box-shadow: 0 1px 3px #e0e0e0;        min-height:20px;
+    }
+
+    #TakeAction {
+
+        .TA-Title {
+            font-size:16px;
+            padding:25px 30px 3px 30px;
+        }
+
+        .TA-SubTitle {
+            font-size:14px;
+            color:#83a7a5;
+            padding:0px 30px 20px 30px;
+        }
+
+        .TA-Questions {
+            width:100%;
+            margin-top:10px;
+
+            th {
+                width:20%;
+                color:#83a7a5;
+                font-size:13px;
+                line-height:21px;
+                font-weight:normal;
+                background-color:#fafafa;
+                padding:20px 30px;
+                border-top:1px solid #edf2f8;
+                border-bottom:1px solid #edf2f8;
+            }
+
+            td {
+                border-bottom:1px solid #edf2f8;
+                border-right:1px solid #edf2f8;
+                &:last-child {
+                    border-right:none;
+                }
+
+                textarea  {
+                    width:100%;
+                    outline: none;
+                    resize:none;
+                    border:none;
+                    color:#83a7a5;
+                    padding:15px;
+                    min-height:140px;
+                }
+            }
+        }
+
+        .TA-Buttons {
+            padding:20px 30px 20px 30px;
+            color:#83a7a5;
+            i {
+                display:inline-block;
+                margin:7px 12px 0 0;
+            }
+
+            .TA-Btn-AddAlly {
+                background-color:#fff;
+                border:1px solid #83a7a5;
+                color:#83a7a5;
+                &:hover {
+                    border-color:#547674;
+                    color:#547674;
+                }
+            }
+
+            .TA-Btn-SaveToProfile {
+                background-color:#fff;
+                border:1px solid #6fb048;
+                color:#6fb048;
+                margin:10px 10px 20px 0;
+                &:hover {
+                    border-color:#578c38;
+                    color:#578c38;
+                }
+            }
+
+            .TA-Btn-DownloadPDF {
+                background-color:#fff;
+                border:1px solid #f47564;
+                color:#f47564;
+                padding:0px 12px 6px 12px;
+                margin:10px 10px 20px 0;
+                &:hover {
+                    border-color:#ef3e28;
+                    color:#ef3e28;
+                }
+            }
+
+            .TA-Btn-Share {
+                background-color:#fff;
+                border:1px solid #83a7a5;
+                color:#83a7a5;
+                margin:10px 0 20px 0;
+                &:hover {
+                    border-color:#547674;
+                    color:#547674;
+                }
+            }
+
+
+
+
+
+
+        }
+
+    }
+
+    #LearnMore {
+
+        .LM-Article {
+            display:inline-block;
+            width:49%;
+            padding:30px;
+            vertical-align:top;
+
+            .LM-MainImage {
+                width:95px;
+                float:left;
+                border-radius: 5px;                -moz-box-shadow: 0 1px 3px #e0e0e0;                -webkit-box-shadow: 0 1px 3px #e0e0e0;                box-shadow: 0 1px 3px #e0e0e0;            }
+            .LM-TextBlock{
+                display:block;
+                margin-left:120px;
+
+
+                .LM-T-Title {
+                    display:block;
+                    font-size: 16px;                    line-height:24px;                    font-weight: bolder;                    color: #0f5f5b;                    &:hover {
+                        color: #0b4946;
+                    }                }
+
+                .LM-T-SubTitle {
+                    color:#83a7a5;
+                    margin:20px 0;
+                    font-style:italic;
+                }
+
+                .LM-T-Text {
+                    color:#83a7a5;
+                }
+
+                .LM-T-LearnMore {
+                    display:block;
+                    font-weight:bold;
+                    color:#6fb048;
+                    margin:30px 0 20px 0;
+                }
+
+
+            }
+
+
+        }
+
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .TA-Questions {
+        th {
+            padding:20px!important;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .TA-Questions {
+        th {
+            padding:10px!important;
+        }
+    }
+    .LM-Article {
+        display: block!important;
+        width: 100%!important;
+    }
+}
+
+@media (max-width: 767px) {
+    .TA-Questions {
+        th {
+            padding:5px!important;
+        }
+    }
+    .LM-Article {
+        display: block!important;
+        width: 100%!important;
+    }
+}
+
+
+/*#endregion */
