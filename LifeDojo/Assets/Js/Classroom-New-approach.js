@@ -1,5 +1,4 @@
-﻿/// <reference path="../External/jQuery/jquery-2.1.0.min.js" />
-$(document).ready(function () {
+﻿$(document).ready(function () {
 
 
     $("#LeftSidebarShrinkButton").click(function () {
@@ -26,6 +25,21 @@ $(document).ready(function () {
         }
     });
 
+    $("#LeftSidebarMobileButton").click(function () {
+        var state = $("#LeftSidebarMobileButton").attr("data-mobileliststate");
+        if (state == "open") {
+            //Shrink sidebar
+            $(".LeftSidebar ol").toggle(200);
+            $(".LeftSidebarSBMIconArrow").removeClass("up-1").addClass("down-1");
+            $("#LeftSidebarMobileButton").attr("data-mobileliststate", "closed");
+        } else {
+            //Expand sidebar
+            $(".LeftSidebar ol").toggle(200);
+            $(".LeftSidebarSBMIconArrow").removeClass("down-1").addClass("up-1");
+            $("#LeftSidebarMobileButton").attr("data-mobileliststate", "open");
+        }
+    });
+
     $(".TA-Btn-AddAlly").click(function () {
         var NewActiveAllyNo = parseInt($(".TA-Questions").attr("data-activeallyno")) + 1;
         $(".TA-Questions").find("tbody")
@@ -38,7 +52,22 @@ $(document).ready(function () {
                      '</tr>');
         $(".TA-Questions").attr("data-activeallyno", NewActiveAllyNo);
     });
+    
+    $(".QuizStandardQuestion .Question").flowtype({
+        minimum: 100,
+        maximum: 700,
+        minFont: 12,
+        maxFont: 18,
+        fontRatio: 12
+    });
 
+    $(".QuizStandardQuestion .Answers").flowtype({
+        minimum: 100,
+        maximum: 700,
+        minFont: 10,
+        maxFont: 13,
+        fontRatio: 13
+    });
     
 
 });

@@ -10,14 +10,20 @@
   margin-bottom: 30px;
 }
 .LeftSidebar .LeftSidebarTitle {
+  display: block;
+}
+.LeftSidebar .LeftSidebarTitle .LeftSidebarIcons {
+  display: none;
+}
+.LeftSidebar .LeftSidebarTitle .LeftSidebarIcons .LeftSidebarSBMIconArrow {
+  margin-left: -2px;
+}
+.LeftSidebar .LeftSidebarTitle span {
   display: inline-block;
   padding: 0 16px;
   font-weight: bolder;
   text-transform: uppercase;
   font-size: 14px;
-}
-.LeftSidebar #LeftSidebarShrinkButtonMobile {
-  display: none;
 }
 .LeftSidebar ol {
   margin: 45px 0 0 0 ;
@@ -137,12 +143,19 @@
   }
 }
 @media (max-width: 767px) {
-  .LeftSidebar .LeftSidebarTitle {
-    display: inline-block;
-    padding: 0 16px;
+  .LeftSidebar {
+    margin-bottom: 15px;
   }
-  .LeftSidebar #LeftSidebarShrinkButtonMobile {
-    display: inline-block;
+  .LeftSidebar .LeftSidebarTitle {
+    cursor: pointer;
+  }
+  .LeftSidebar .LeftSidebarTitle .LeftSidebarIcons {
+    display: table-cell;
+    white-space: nowrap;
+  }
+  .LeftSidebar .LeftSidebarTitle span {
+    display: table-cell;
+    padding: 0 10px;
   }
   .LeftSidebar ol {
     display: none;
@@ -265,7 +278,7 @@
   background-color: #fff;
   box-shadow: 0 1px 3px #e0e0e0;
   margin-bottom: 15px;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   width: 100%;
   display: table-cell;
@@ -297,6 +310,53 @@
 }
 .Quiz .QuizStartButton:hover {
   background-color: #639e40;
+}
+.QuizStandardQuestion {
+  position: relative;
+  padding-bottom: 45px;
+  vertical-align: top;
+}
+.QuizStandardQuestion .Question {
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+.QuizStandardQuestion .Answers {
+  text-align: left;
+}
+.QuizStandardQuestion .Answers label {
+  font-weight: normal;
+}
+.QuizStandardQuestion .Answers .CorrectAnswer {
+  color: #c83320;
+}
+.QuizStandardQuestion .Buttons {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0px 15px 15px 15px;
+}
+.QuizStandardQuestion .Buttons .BtnPrev,
+.QuizStandardQuestion .Buttons .BtnNext {
+  padding: 2px 0px;
+  width: 48%;
+  border-color: #578c38;
+  color: #578c38;
+  background-color: #fff;
+}
+.QuizStandardQuestion .Buttons .BtnPrev:hover,
+.QuizStandardQuestion .Buttons .BtnNext:hover {
+  border-color: #4b7a30;
+  color: #4b7a30;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.QuizStandardQuestion .Buttons .BtnPrev {
+  float: left;
+}
+.QuizStandardQuestion .Buttons .BtnNext {
+  float: right;
 }
 @media (min-width: 1200px) {
   .Quiz.small {
@@ -452,7 +512,7 @@
   background-color: #fff;
   border: 1px solid #6fb048;
   color: #6fb048;
-  margin: 10px 10px 20px 0;
+  margin: 15px 10px 20px 0;
 }
 .TA-LM-content #TakeAction .TA-Buttons .TA-Btn-SaveToProfile:hover {
   border-color: #578c38;
@@ -463,7 +523,7 @@
   border: 1px solid #f47564;
   color: #f47564;
   padding: 0px 12px 6px 12px;
-  margin: 10px 10px 20px 0;
+  margin: 15px 10px 20px 0;
 }
 .TA-LM-content #TakeAction .TA-Buttons .TA-Btn-DownloadPDF:hover {
   border-color: #ef3e28;
@@ -473,7 +533,7 @@
   background-color: #fff;
   border: 1px solid #83a7a5;
   color: #83a7a5;
-  margin: 10px 0 20px 0;
+  margin: 15px 0 20px 0;
 }
 .TA-LM-content #TakeAction .TA-Buttons .TA-Btn-Share:hover {
   border-color: #547674;
@@ -538,6 +598,10 @@
 @media (max-width: 767px) {
   .TA-Questions th {
     padding: 5px!important;
+  }
+  .TA-Btn-AddAlly {
+    float: left;
+    margin: 20px 0 15px 0;
   }
   .LM-Article {
     display: block!important;

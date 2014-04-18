@@ -17,8 +17,7 @@
 
 </head>
 <body>
-
-
+    
     <!-- Start Header -->
     <header class="navbar navbar-default">
         <div class="container">
@@ -55,13 +54,20 @@
         </div>
     </header>
     <!-- End Header -->
+
     <!-- Start Content -->
     <div class="container">
         <div class="row">
             <div id="LeftSideWrapper" class="col-sm-3">
 
                 <div class="LeftSidebar">
-                    <div class="LeftSidebarTitle">Science of Exercise</div>
+                    <div id="LeftSidebarMobileButton" class="LeftSidebarTitle" data-mobileliststate="closed">
+                        <div class="LeftSidebarIcons">
+                            <i class="LeftSidebarSBMIconMenu flaticon stroke menu-2"></i>
+                            <i class="LeftSidebarSBMIconArrow flaticon stroke down-1"></i>
+                        </div>
+                        <span>Science of Exercise</span>
+                    </div>
                     <ol>
                         <li class="completed">
                             <a href="#">Intro</a>
@@ -187,11 +193,49 @@
                     </div>
                     <div class="col-sm-12 col-md-3 ">
 
-                        <div class="Quiz small">
+                        <!-- This box is OK for first question / results -->
+                        <!--<div class="Quiz small">
                             <div class="QuizQuestionNo">1</div>
                             <div class="QuizTitle">Live Quiz</div>
                             <div class="QuizSubTitle">Answer the questions as you follow along with the video -- Good luck !</div>
                             <a href="#" class="btn QuizStartButton">Start ! >>></a>
+                        </div>-->
+
+                        <!-- This box should be used for Standard Questions  -->
+                        <div class="Quiz small QuizStandardQuestion">
+                            <div class="Question">
+                                1. Scientist have found that as you get older, if you do not excercise, your brain actualy:
+                            </div>
+                            <div class="Answers">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="answers" id="Answer1" value="1">
+                                        Gets bigger, giving you headaches
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="answers" id="Answer2" value="2">
+                                        Works faster, because it is not tired
+                                    </label>
+                                </div>
+                                <div class="radio CorrectAnswer">
+                                    <label>
+                                        <input type="radio" name="answers" id="Answer3" value="3">
+                                        Shrinks and shrivels up, making it smaller
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="answers" id="Answer4" value="4" checked>
+                                        Lasts longer, because you are not using it too much
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="Buttons">
+                                <button class="btn BtnPrev">Prev</button>
+                                <button class="btn BtnNext">Next</button>
+                            </div>
                         </div>
 
                     </div>
@@ -342,6 +386,7 @@
         </div>
     </div>
     <!-- End Content -->
+
     <!-- Start Footer -->
     <footer class="MainFooter container">
         <hr />
@@ -355,8 +400,7 @@
         </ul>
     </footer>
     <!-- End Footer -->
-
-
+    
     <script src="/Assets/External/jQuery/jquery-2.1.0.min.js"></script>
     <script src="/Assets/External/Bootstrap/js/bootstrap.min.js"></script>
     <script src="/Assets/External/video-js/video.js"></script>
@@ -365,10 +409,10 @@
         videojs.options.flash.swf = "/Assets/External/video-js/video-js.swf";
         videojs('MainVideo', { "techOrder": ["vimeo"], "src": "https://vimeo.com/57059742" });
     </script>
+    <script src="/Assets/External/Flowtype/flowtype.js"></script>
 
     <script src="/Assets/Js/shared.js"></script>
     <script src="/Assets/Js/Classroom-New-approach.js"></script>
-
 
 </body>
 </html>

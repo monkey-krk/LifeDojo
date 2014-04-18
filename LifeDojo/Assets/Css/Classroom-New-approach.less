@@ -11,15 +11,22 @@
     margin-bottom: 30px;
     
     .LeftSidebarTitle {
-        display:inline-block;
-        padding: 0 16px;
-        font-weight: bolder;
-        text-transform: uppercase;
-        font-size: 14px;
-    }
+        display:block;
 
-    #LeftSidebarShrinkButtonMobile {
-        display:none;
+        .LeftSidebarIcons {
+            display:none;
+            .LeftSidebarSBMIconArrow {
+                margin-left:-2px;
+            }
+        }
+
+        span {
+            display:inline-block;
+            padding: 0 16px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
 
     }
 
@@ -164,16 +171,26 @@
 }
 @media (max-width: 767px) {
     .LeftSidebar {
+        margin-bottom:15px;
         .LeftSidebarTitle {
-            display: inline-block;
-            padding: 0 16px;
+            cursor:pointer;
+
+            .LeftSidebarIcons {
+                display:table-cell;
+                white-space:nowrap;
+            }    
+
+            span {
+                display:table-cell;
+                padding: 0 10px;
+                
+            }
+            
         }
 
-        #LeftSidebarShrinkButtonMobile {
-            display: inline-block;
+        ol {
+            display:none;
         }
-
-        ol {display:none;}
     }
 }
 
@@ -311,7 +328,7 @@
     box-shadow: 0 1px 3px #e0e0e0;
     margin-bottom:15px;
     
-    padding: 20px;
+    padding: 15px;
     text-align:center;
     width: 100%;
     display:table-cell;
@@ -342,6 +359,58 @@
         margin:20px auto 0 auto;
         &:hover {
             background-color: #639e40;
+        }
+    }
+}
+
+.QuizStandardQuestion {
+    position:relative;
+    padding-bottom:45px;
+    vertical-align:top;
+
+    .Question {
+        font-weight: bold;
+        text-align:left;
+        border-bottom:1px solid #e0e0e0;
+        padding-bottom:10px;
+    }
+
+    .Answers {
+        text-align:left;
+        
+        label {
+            font-weight: normal;
+        }
+
+        .CorrectAnswer {
+            color:#c83320;
+        }
+    }
+
+    .Buttons {
+        position:absolute;
+        bottom:0px;
+        left:0px;
+        width:100%;
+        padding:0px 15px 15px 15px;
+
+        .BtnPrev, .BtnNext {
+            padding: 2px 0px;
+            width:48%;
+            border-color: #578c38;
+            color: #578c38;
+            background-color:#fff;
+            &:hover {
+                border-color:#4b7a30;
+                color:#4b7a30;
+                background-color:rgba(0, 0, 0, 0.02);
+            }
+        }
+        .BtnPrev {
+            float:left;
+        }
+        .BtnNext {
+            float:right;
         }
     }
 }
@@ -514,7 +583,7 @@
                 background-color:#fff;
                 border:1px solid #6fb048;
                 color:#6fb048;
-                margin:10px 10px 20px 0;
+                margin:15px 10px 20px 0;
                 &:hover {
                     border-color:#578c38;
                     color:#578c38;
@@ -526,7 +595,7 @@
                 border:1px solid #f47564;
                 color:#f47564;
                 padding:0px 12px 6px 12px;
-                margin:10px 10px 20px 0;
+                margin:15px 10px 20px 0;
                 &:hover {
                     border-color:#ef3e28;
                     color:#ef3e28;
@@ -537,7 +606,7 @@
                 background-color:#fff;
                 border:1px solid #83a7a5;
                 color:#83a7a5;
-                margin:10px 0 20px 0;
+                margin:15px 0 20px 0;
                 &:hover {
                     border-color:#547674;
                     color:#547674;
@@ -603,7 +672,6 @@
 
 }
 
-
 @media (min-width: 1200px) {
 }
 
@@ -633,11 +701,14 @@
             padding:5px!important;
         }
     }
+    .TA-Btn-AddAlly {
+        float:left;
+        margin:20px 0 15px 0;
+    }
     .LM-Article {
         display: block!important;
         width: 100%!important;
     }
 }
-
 
 /*#endregion */
