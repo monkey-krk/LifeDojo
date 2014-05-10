@@ -5,10 +5,10 @@
     background-color: #e6e8e2;
     border-radius: 5px;
     box-shadow: 0 1px 3px #d7d7d7, inset -1px -1px 1px rgba(255,255,255,0.2);
-    padding: 35px 20px;
+    padding: 30px 20px;
     font-size: 13px;
     color: #0f5f5b;
-    margin-bottom: 30px;
+    margin: 30px 0;
     
     .LeftSidebarTitle {
         display:block;
@@ -23,7 +23,7 @@
         span {
             display:inline-block;
             padding: 0 16px;
-            font-weight: bolder;
+            font-weight: 600;
             text-transform: uppercase;
             font-size: 14px;
         }
@@ -31,7 +31,7 @@
     }
 
     ol {
-        margin: 45px 0 0 0 ;
+        margin: 40px 0 0 0 ;
         padding: 0;
         list-style: none;
         counter-reset: chapter-counter;
@@ -171,7 +171,7 @@
 }
 @media (max-width: 767px) {
     .LeftSidebar {
-        margin-bottom:15px;
+        margin: 15px 0;
         .LeftSidebarTitle {
             cursor:pointer;
 
@@ -206,7 +206,7 @@
     padding: 20px;
     color: #0f5f5b;
     font-size: 25px;
-    margin-bottom:15px;
+    margin: 30px 0 10px 0;
 
     i {
         display: inline-block;
@@ -214,11 +214,12 @@
         font-size: 18px;
     }
     span {
-        margin-left:22px;
+        margin-left:10px;
     }
     #LeftSidebarShrinkButton {
         display:inline-block;
         cursor:pointer;
+        width:35px;
     }
     .TB-IconMenu {
         margin:0 -8px;
@@ -243,6 +244,7 @@
 }
 @media (max-width: 767px) {
     .TopBar {
+        margin: 0px 0 15px 0;
         font-size: 16px;
         #LeftSidebarShrinkButton {
             display:none;
@@ -265,7 +267,7 @@
     overflow:hidden;
 
     box-shadow: 0 1px 3px #e0e0e0;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 @media (min-width: 1200px) {
@@ -322,6 +324,10 @@
 
 /*#region Quiz */
 
+.QuizWrapper {
+    padding-left:7px;
+}
+
 .Quiz {
     border-radius: 5px;
     background-color: #fff;
@@ -365,7 +371,7 @@
 
 .QuizStandardQuestion {
     position:relative;
-    padding-bottom:45px;
+    padding-bottom:48px;
     vertical-align:top;
 
     .Question {
@@ -384,6 +390,9 @@
 
         .CorrectAnswer {
             color:#c83320;
+        }
+        .radio:last-child {
+            margin-bottom:0;
         }
     }
 
@@ -641,7 +650,7 @@
 
                 .LM-T-Title {
                     display:block;
-                    font-size: 16px;                    line-height:24px;                    font-weight: bolder;                    color: #0f5f5b;                    &:hover {
+                    font-size: 16px;                    line-height:24px;                    font-weight: 600;                    color: #0f5f5b;                    &:hover {
                         color: #0b4946;
                     }                }
 
