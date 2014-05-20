@@ -11,6 +11,7 @@
     <link href="/Assets/External/Flaticons/solid/solid.min.css" rel="stylesheet" />
     <link href="/Assets/External/Flaticons/stroke/stroke.min.css" rel="stylesheet" />
     <link href="/Assets/External/Redactor/redactor.css" rel="stylesheet" />
+    <link href="/Assets/External/Fullcalendar/fullcalendar.css" rel="stylesheet" />
 
     <link href="/Assets/Css/Shared.min.css" rel="stylesheet" />
     <link href="/Assets/Css/Profile-New-approach.min.css" rel="stylesheet" />
@@ -54,14 +55,12 @@
         </div>
     </header>
     <!-- End Header -->
-
     <!-- Start SubHeader -->
     <div class="SubHeader">
         <a href="#" class="active">My Profile</a>
         <a href="#">Edit Profile</a>
     </div>
     <!-- End Sub-Header -->
-
     <!-- Start Content -->
     <div class="container">
 
@@ -487,7 +486,118 @@
                             </ul>
                         </div>
                         <div class="TContent MyPlan" data-tab="4">
-                            MyPlan
+                            <header>
+                                <div class="row">
+                                    <div class="col-sm-6 text-left">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn MyPlanCalendar-CourceSelect dropdown-toggle" data-toggle="dropdown">
+                                                <span class="text">Science of Exercise</span><span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu text-left" role="menu">
+                                                <li><a href="#">Science of Exercise</a></li>
+                                                <li><a href="#">Healthy Eating</a></li>
+                                                <li><a href="#">Science of Exercise</a></li>
+                                                <li><a href="#">Healthy Eating</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 text-right">
+                                        <a href="#" class="btn MyPlanCalendar-AddNewItem">+ Add a new Item</a>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="MyPlan-Calendar"></div>
+                            <script type="text/javascript">
+                                var date = new Date(); //dummy date, so that calendar be populated this month
+                                var m = date.getMonth(); //dummy date, so that calendar be populated this month
+                                var y = date.getFullYear(); //dummy date, so that calendar be populated this month
+
+                                //Calendar data format
+                                //http://arshaw.com/fullcalendar/docs/event_data/
+                                var CalendarEvents = [
+                                        {
+                                            title: 'Exercise #4',
+                                            description: 'Lower Back, Legs, Cardio',
+                                            url : '#4',
+                                            start: new Date(y, m, 3),
+                                            icon: 'checkmark',
+                                            iconcolor: 'green'
+                                        },
+                                        {
+                                            title: 'Exercise #5',
+                                            description: 'Cardio 45 minutes',
+                                            url: '#5',
+                                            start: new Date(y, m, 3),
+                                            icon: 'x',
+                                            iconcolor: 'gray'
+                                        },
+                                        {
+                                            title: 'Exercise #6',
+                                            description: 'Lower Back, Legs, Cardio',
+                                            url: '#6',
+                                            start: new Date(y, m, 5),
+                                            icon: 'clock',
+                                            iconcolor: 'yellow'
+                                        },
+                                        {
+                                            title: 'Exercise #7',
+                                            description: 'Cardio 45 minutes',
+                                            url: '#7',
+                                            start: new Date(y, m, 5),
+                                            icon: 'clock',
+                                            iconcolor: 'orange'
+                                        },
+                                        {
+                                            title: 'Exercise #8',
+                                            description: 'Lower Back, Legs, Cardio',
+                                            url: '#8',
+                                            start: new Date(y, m, 11),
+                                            icon: 'clock',
+                                            iconcolor: 'blue'
+                                        },
+                                        {
+                                            title: 'Exercise #9',
+                                            description: 'Lower Back, Legs, Cardio',
+                                            url: '#9',
+                                            start: new Date(y, m, 15),
+                                            icon: 'clock',
+                                            iconcolor: 'green'
+                                        },
+                                        {
+                                            title: 'Exercise #10',
+                                            description: 'Lower Back, Legs, Cardio',
+                                            url: '#10',
+                                            start: new Date(y, m, 17),
+                                            icon: 'clock',
+                                            iconcolor: 'red'
+                                        },
+                                        {
+                                            title: 'Exercise #11',
+                                            description: 'Cardio 45 minutes',
+                                            url: '#11',
+                                            start: new Date(y, m, 17),
+                                            icon: 'clock',
+                                            iconcolor: 'gray'
+                                        },
+                                        {
+                                            title: 'Exercise #12',
+                                            description: 'Cardio 45 minutes',
+                                            url: '#12',
+                                            start: new Date(y, m, 27),
+                                            icon: 'clock',
+                                            iconcolor: 'blue'
+                                        },
+                                        {
+                                            title: 'Exercise #13',
+                                            description: 'Lower Back, Legs, Cardio',
+                                            url: '#13',
+                                            start: new Date(y, m, 30),
+                                            icon: 'clock',
+                                            iconcolor: 'blue'
+                                        }
+
+                                ];
+                            </script>
                         </div>
                         <div class="TContent MyCoach" data-tab="5">
                             MyCoach
@@ -502,7 +612,6 @@
 
     </div>
     <!-- End Content -->
-
     <!-- Start Footer -->
     <footer class="MainFooter container">
         <hr />
@@ -520,8 +629,9 @@
     <script src="/Assets/External/jQuery/jquery-2.1.0.min.js"></script>
     <script src="/Assets/External/Bootstrap/js/bootstrap.min.js"></script>
     <script src="/Assets/External/Redactor/redactor.min.js"></script>
+    <script src="/Assets/External/Fullcalendar/fullcalendar.min.js"></script>
 
-    <script src="/Assets/Js/shared.js"></script>
+    <script src="/Assets/Js/Shared.js"></script>
     <script src="/Assets/Js/Profile-New-approach.js"></script>
 
 </body>

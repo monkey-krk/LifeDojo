@@ -175,7 +175,6 @@
 }
 .ProfileUser .Courses li .Course .Progress {
   display: inline-block;
-  float: right;
   width: 100%;
   max-width: 140px;
   height: 5px;
@@ -458,13 +457,13 @@
   position: relative;
 }
 .TContent.Journal #EditorToolBar .redactor_toolbar.redactor-toolbar-external {
-  border: none!important;
+  border: none !important;
 }
 .TContent.Journal #EditorToolBar .redactor_toolbar {
-  padding: 19px 40px!important;
+  padding: 19px 40px !important;
 }
 .TContent.Journal #EditorToolBar .redactor_toolbar li a {
-  color: #0f5f5c!important;
+  color: #0f5f5c !important;
 }
 .TContent.Journal #EditorToolBar .redactor_toolbar li a:hover {
   background-color: #fafafa;
@@ -805,7 +804,7 @@
   background-color: #f47564;
 }
 .TContent.Allies ul li a .LevelIcon.green {
-  background-color: #67ba2f;
+  background-color: #6fb048;
 }
 .TContent.Allies ul li a .Name {
   color: #0f5f5b;
@@ -853,6 +852,174 @@
 }
 .TContent.Allies ul li a:hover .Image {
   border: 5px solid #edf2f8;
+}
+.TContent.MyPlan header {
+  background-color: #fff;
+  height: 80px;
+  border-bottom: 1px solid #edf2f8;
+  padding: 20px 50px;
+}
+.TContent.MyPlan header .MyPlanCalendar-CourceSelect,
+.TContent.MyPlan header .MyPlanCalendar-AddNewItem {
+  display: block;
+  float: right;
+  min-width: 120px;
+  height: 40px;
+  padding: 6px 20px;
+  padding-top: 9px;
+  font-weight: bold;
+  color: #83a7a5;
+  border-color: #83a7a5;
+  background-color: transparent;
+  box-shadow: none;
+}
+.TContent.MyPlan header .MyPlanCalendar-CourceSelect.dropdown-toggle,
+.TContent.MyPlan header .MyPlanCalendar-AddNewItem.dropdown-toggle {
+  padding: 6px 16px;
+  padding-top: 5px;
+  border-color: #edf2f8;
+  color: #83a7a5;
+}
+.TContent.MyPlan header .MyPlanCalendar-CourceSelect .caret,
+.TContent.MyPlan header .MyPlanCalendar-AddNewItem .caret {
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+.TContent.MyPlan header .MyPlanCalendar-CourceSelect:hover,
+.TContent.MyPlan header .MyPlanCalendar-AddNewItem:hover {
+  color: #6fb048;
+  border-color: #6fb048;
+  background-color: transparent;
+  cursor: pointer;
+}
+.TContent.MyPlan .MyPlan-Calendar {
+  padding: 30px 0 60px 0;
+  width: 100%;
+  margin: 0 auto;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-button-prev,
+.TContent.MyPlan .MyPlan-Calendar .fc-button-next {
+  border-radius: 0;
+  background-color: none;
+  background-image: none;
+  background: no-repeat;
+  border: none;
+  box-shadow: none;
+  -webkit-text-shadow: none;
+  text-shadow: none;
+  margin: 0 15px;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-header-title h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-widget-header {
+  font-size: 13px;
+  color: #6fb048;
+  border: none;
+  padding-bottom: 10px;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-widget-content {
+  border: 1px solid #edf2f8;
+  border-collapse: collapse !important;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-view table.fc-border-separate {
+  border-collapse: collapse !important;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-day {
+  padding: 5px 0 0 5px;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-day .FirstCell .fc-day-number {
+  float: left;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-day .fc-day-number {
+  float: left;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-past .fc-day-number {
+  color: #adc4c3;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-event {
+  display: block;
+  margin-bottom: 5px;
+  background: none;
+  border: none;
+  color: #0f5f5c;
+  padding: 5px 0 0 5px;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-event:hover {
+  background-color: #fafafa;
+  color: #052825;
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 1px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon:before {
+  display: inline-block;
+  font-family: 'Flaticons Solid';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon.checkmark:before {
+  content: "";
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon.x:before {
+  content: "";
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon.clock:before {
+  content: "";
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon.yellow {
+  color: #dccf43;
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon.orange {
+  color: #e99537;
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon.blue {
+  color: #666bd6;
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon.green {
+  color: #6fb048;
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon.red {
+  color: #f47564;
+}
+.TContent.MyPlan .MyPlan-Calendar .Icon.gray {
+  color: #adc4c3;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-event-inner {
+  display: inline-block;
+  width: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f5f5c;
+}
+.TContent.MyPlan .MyPlan-Calendar .Description {
+  display: block;
+  color: #adc4c3;
+  font-size: 10px;
+  margin-top: -5px;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-today {
+  background-color: #6fb048;
+  color: #fff;
+  font-weight: bold;
+}
+.TContent.MyPlan .MyPlan-Calendar .fc-today .fc-day-number:after {
+  font-weight: normal;
+  content: " - Today";
+}
+.TContent.MyPlan .MyPlan-Calendar .Today .fc-event-inner {
+  color: #fff;
+}
+.TContent.MyPlan .MyPlan-Calendar .Today .Description {
+  color: rgba(255, 255, 255, 0.8);
 }
 /*#region Responsive */
 @media (min-width: 992px) and (max-width: 1199px) {

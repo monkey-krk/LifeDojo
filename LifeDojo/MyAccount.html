@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LifeDojo - Profile</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/Assets/External/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Assets/External/Flaticons/solid/solid.min.css" rel="stylesheet" />
+    <link href="/Assets/External/Flaticons/stroke/stroke.min.css" rel="stylesheet" />
+    <link href="/Assets/External/Redactor/redactor.css" rel="stylesheet" />
+    <link href="/Assets/External/Fullcalendar/fullcalendar.css" rel="stylesheet" />
+
+    <link href="/Assets/Css/Shared.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/MyAccount.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- Start Header -->
+    <header class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">LIFEDOJO</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#MyStudents">My students</a></li>
+                    <li><a href="#AllClasses">All Classes</a></li>
+                    <li><a href="#MyDojo">My Dojo</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle User" data-toggle="dropdown">
+                            <span class="name">F. Justic</span>
+                            <i class="flaticon solid down-1"></i>
+                            <div class="avatar" style="background-image: url('/Assets/Img/dummy/img_40_40_1.jpg');"></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#Profile"><i class="flaticon solid user-1"></i>&nbsp;&nbsp; Profile</a></li>
+                            <li><a href="#Settings"><i class="flaticon solid settings-1"></i>&nbsp;&nbsp; Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#Logout"><i class="flaticon solid upload-1"></i>&nbsp;&nbsp; Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <div class="row TopRow">
+            <div class="col-sm-12">
+                <div class="TopTitle">Welcome Back Filip</div>
+                <div class="TopSubTitle">Here you can edit your account information.</div>
+            </div>
+        </div>
+        <form class="box ContentBox" action="/" method="post" role="form">
+            <div class="row ContentHeader">
+                <div class="col-sm-12 text-center">
+                    <div class="UserImage" style="background-image: url('/Assets/Img/Icons/UploadCloud_100x100.jpg');"></div>
+                    <div class="UploadTitle">Upload a Profile Image</div>
+                    <div class="UploadImage" id="UploadImage">
+                        Upload Image
+                        <input class="UploadImageFileInput" type="file" name="ImageFile" id="ImageFile" />
+                    </div>
+                </div>
+            </div>
+            <div class="row InputRow">
+                <div class="col-sm-4">
+                    <div class="form-group first">
+                        <label for="FirstName">First Name</label>
+                        <input id="FirstName" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group middle">
+                        <label for="LastName">Last Name</label>
+                        <input id="LastName" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group last">
+                        <label for="Email">Email</label>
+                        <input id="Email" type="email" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row InputRow">
+                <div class="col-sm-4">
+                    <div class="form-group first">
+                        <label for="Organization">Organization</label>
+                        <input id="Organization" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group middle">
+                        <label for="MyCoaches">My Coaches</label>
+                        <select id="MyCoaches" class="form-control">
+                            <option>Chris Cutter</option>
+                            <option>Filip Justic</option>
+                            <option>Patricia Bedard</option>
+                            <option>Matej Justic</option>
+                            <option>Marino Samanic</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+            </div>
+            <div class="row InputRow BorderTop">
+                <div class="col-sm-4">
+                    <div class="form-group first">
+                        <label for="NewPassword">New Password</label>
+                        <input id="NewPassword" type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group middle">
+                        <label for="RepeatPassword">Repeat Password</label>
+                        <input id="RepeatPassword" type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <i class="HelpIcon"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <button type="submit" class="btn SubmitButton">Save Changes</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <footer class="MainFooter container">
+        <hr />
+        <ul class="left">
+            <li><a href="#">Copyright 2014 by LifeDojo</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Something else</a></li>
+        </ul>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="/Assets/External/jQuery/jquery-2.1.0.min.js"></script>
+    <script src="/Assets/External/Bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="/Assets/Js/Shared.js"></script>
+    <script src="/Assets/Js/MyAccount.js"></script>
+
+</body>
+</html>
