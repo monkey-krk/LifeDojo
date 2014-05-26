@@ -1,0 +1,325 @@
+/*#region ProfileUser */
+.ProfileUser {
+  margin-top: 30px;
+  text-align: center;
+  vertical-align: middle;
+  height: 370px;
+}
+.ProfileUser .Name {
+  padding-top: 35px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0f5f5c;
+}
+.ProfileUser .Name i {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin: 0 0 2px 9px;
+}
+.ProfileUser .Name i.yellow {
+  background-color: #dccf43;
+}
+.ProfileUser .Name i.blue {
+  background-color: #666bd6;
+}
+.ProfileUser .Name i.red {
+  background-color: #f47564;
+}
+.ProfileUser .Name i.green {
+  background-color: #6fb048;
+}
+.ProfileUser .Privileges {
+  margin-top: -2px;
+  color: #adc4c3;
+}
+.ProfileUser .UserImage {
+  margin: 35px auto 41px auto;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.ProfileUser footer {
+  display: table;
+  background-color: #fafafa;
+  border-top: 1px solid #edf2f8;
+  height: 70px;
+  width: 100%;
+  padding: 15px 0;
+  color: #acc4c3;
+  font-size: 13px;
+}
+.ProfileUser footer .Programs,
+.ProfileUser footer .Enrolled,
+.ProfileUser footer .TotalActions {
+  display: table-cell;
+  width: 33%;
+  vertical-align: middle;
+  border-right: 1px solid #edf2f8;
+}
+.ProfileUser footer .Programs span,
+.ProfileUser footer .Enrolled span,
+.ProfileUser footer .TotalActions span {
+  display: block;
+  color: #0f5f5b;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ProfileUser footer .TotalActions {
+  border-right: none;
+}
+/*#endregion */
+/*#region ProgramHealth */
+.ProgramHealth {
+  margin-top: 30px;
+  height: 370px;
+}
+.ProgramHealth .Header {
+  background-color: #fafafa;
+  border-bottom: 1px solid #edf2f8;
+  color: #adc4c3;
+  padding: 15px 20px 0px 20px;
+  height: 50px;
+}
+.ProgramHealth .Programs {
+  height: 320px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.ProgramHealth .Programs .Program {
+  border-bottom: 1px solid #edf2f8;
+}
+.ProgramHealth .Programs .Program .PHCell1 {
+  padding: 22px 0 22px 20px;
+}
+.ProgramHealth .Programs .Program .PHCell1 .Icon {
+  font-family: 'Flaticons Stroke';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  float: left;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  padding: 8px 0 0 10px;
+  margin-right: 12px;
+  color: #fff;
+  font-size: 16px;
+}
+.ProgramHealth .Programs .Program .PHCell1 .Icon.yellow {
+  background-color: #dccf43;
+}
+.ProgramHealth .Programs .Program .PHCell1 .Icon.orange {
+  background-color: #e99537;
+}
+.ProgramHealth .Programs .Program .PHCell1 .Icon.blue {
+  background-color: #666bd6;
+}
+.ProgramHealth .Programs .Program .PHCell1 .Icon.red {
+  background-color: #f47564;
+}
+.ProgramHealth .Programs .Program .PHCell1 .Icon.green {
+  background-color: #6fb048;
+}
+.ProgramHealth .Programs .Program .PHCell1 .Title {
+  display: inline-block;
+  padding-top: 8px;
+  color: #0f5f5c;
+}
+.ProgramHealth .Programs .Program .PHCell2 {
+  padding: 22px 0;
+}
+.ProgramHealth .Programs .Program .PHCell2.yellow {
+  color: #dccf43;
+}
+.ProgramHealth .Programs .Program .PHCell2.yellow .ProgressBar .bar {
+  background-color: #dccf43;
+}
+.ProgramHealth .Programs .Program .PHCell2.orange {
+  color: #e99537;
+}
+.ProgramHealth .Programs .Program .PHCell2.orange .ProgressBar .bar {
+  background-color: #e99537;
+}
+.ProgramHealth .Programs .Program .PHCell2.blue {
+  color: #666bd6;
+}
+.ProgramHealth .Programs .Program .PHCell2.blue .ProgressBar .bar {
+  background-color: #666bd6;
+}
+.ProgramHealth .Programs .Program .PHCell2.red {
+  color: #f47564;
+}
+.ProgramHealth .Programs .Program .PHCell2.red .ProgressBar .bar {
+  background-color: #f47564;
+}
+.ProgramHealth .Programs .Program .PHCell2.green {
+  color: #6fb048;
+}
+.ProgramHealth .Programs .Program .PHCell2.green .ProgressBar .bar {
+  background-color: #6fb048;
+}
+.ProgramHealth .Programs .Program .PHCell2 .ProgressNumbers {
+  display: inline-block;
+  font-weight: 600;
+  padding-top: 8px;
+}
+.ProgramHealth .Programs .Program .PHCell2 .ProgressBar {
+  display: inline-block;
+  width: 80px;
+  height: 8px;
+  margin-bottom: 2px;
+  margin-left: 15px;
+  background-color: #d3dede;
+  border-radius: 8px;
+}
+.ProgramHealth .Programs .Program .PHCell2 .ProgressBar .bar {
+  height: 8px;
+  border-radius: 8px;
+  background-color: #6fb048;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ProgramHealth .Programs .Program .PHCell1 .Icon {
+    margin-right: 7px;
+  }
+  .ProgramHealth .Programs .Program .PHCell1 .Title {
+    font-size: 13px;
+  }
+  .ProgramHealth .Programs .Program .PHCell2 .ProgressNumbers {
+    font-size: 13px;
+  }
+  .ProgramHealth .Programs .Program .PHCell2 .ProgressBar {
+    width: 70px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ProgramHealth .Header {
+    font-size: 11px;
+  }
+  .ProgramHealth .Programs .Program .PHCell1 .Icon {
+    display: none;
+  }
+  .ProgramHealth .Programs .Program .PHCell1 .Title {
+    font-size: 12px;
+  }
+  .ProgramHealth .Programs .Program .PHCell2 .ProgressNumbers {
+    font-size: 12px;
+  }
+  .ProgramHealth .Programs .Program .PHCell2 .ProgressBar {
+    width: 45px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .ProgramHealth .Header {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .ProgramHealth .Programs .Program .PHCell1 {
+    padding: 11px 0 11px 15px;
+  }
+  .ProgramHealth .Programs .Program .PHCell1 .Title {
+    font-size: 12px;
+  }
+  .ProgramHealth .Programs .Program .PHCell2 {
+    padding: 1px 0 11px 22px;
+  }
+  .ProgramHealth .Programs .Program .PHCell2 .ProgressNumbers {
+    font-size: 12px;
+  }
+  .ProgramHealth .Programs .Program .PHCell2 .ProgressBar {
+    width: 70%;
+    margin-left: 5px;
+  }
+}
+/*#endregion */
+/*#region Participation */
+.Participation {
+  margin-top: 30px;
+  height: 370px;
+}
+.Participation .Header {
+  background-color: #fafafa;
+  border-bottom: 1px solid #edf2f8;
+  color: #adc4c3;
+  padding: 15px 20px 0px 20px;
+  height: 50px;
+}
+.Participation .ChartWrapper {
+  padding: 20px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Participation .Header {
+    font-size: 11px;
+  }
+}
+@media (max-width: 767px) {
+  .Participation .Header {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+/*#endregion */
+/*#region BottomChartsList */
+.BottomChartsList {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+.BottomChartsList .col-sm-4 {
+  padding: 20px 10px 0 10px;
+}
+.BottomChartsList .col-sm-4:first-child {
+  padding: 20px 10px 0px 25px;
+}
+.BottomChartsList .col-sm-4:last-child {
+  padding: 20px 25px 0px 10px;
+}
+.BottomChartsList .ChartBox {
+  border: 1px solid #edf2f8;
+  border-radius: 5px;
+  height: 370px;
+}
+.BottomChartsList .ChartBox .Header {
+  background-color: #fafafa;
+  border-bottom: 1px solid #edf2f8;
+  color: #adc4c3;
+  padding: 15px 20px 0px 20px;
+  height: 50px;
+  width: 100%;
+}
+.BottomChartsList .ChartBox .ChartWrapper {
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .BottomChartsList {
+    margin-top: 20px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .BottomChartsList .col-sm-4 {
+    padding: 20px 10px 0 10px;
+  }
+  .BottomChartsList .col-sm-4:first-child {
+    padding: 20px 10px 0 10px;
+  }
+  .BottomChartsList .col-sm-4:last-child {
+    padding: 20px 10px 0 10px;
+  }
+  .BottomChartsList .ChartBox {
+    background-color: #fff;
+  }
+}
+/*#endregion */

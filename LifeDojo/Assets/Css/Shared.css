@@ -255,6 +255,24 @@ strong {
   color: #0f5f5c;
   cursor: default;
 }
+.SubHeader .dropdown button {
+  background-color: #fff;
+  border: none;
+  color: #adc4c3;
+  box-shadow: none!important;
+}
+.SubHeader .dropdown button i {
+  margin-right: 8px;
+}
+.SubHeader .dropdown button .caret {
+  margin-left: 15px;
+}
+.SubHeader .dropdown button:hover {
+  color: #0f5f5c;
+}
+.SubHeader .dropdown.open button {
+  color: #0f5f5c;
+}
 /*#endregion */
 /*#region Footer */
 .MainFooter {
