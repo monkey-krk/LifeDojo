@@ -1212,8 +1212,9 @@
             border: none;
             color: #0f5f5c;
             padding: 5px 0 0 5px;
+
             &:hover {
-                background-color:#fafafa;
+                background-color: #fafafa;
                 color: #052825;
             }
         }
@@ -1318,11 +1319,210 @@
                 color: rgba(255,255,255,0.8);
             }
         }
-
     }
 }
 
 .TContent.MyCoach {
+    background-color: #fafafa;
+
+    ul {
+        margin: 0;
+        padding: 30px 110px 0px 110px;
+        list-style: none;
+
+        .Coach {
+            display: inline-block;
+            position: relative;
+            margin: 0 60px 45px 0;
+            width: 270px;
+            background-color: #fff;
+            border: 1px solid #edf2f8;
+            border-radius: 5px;
+            text-align: center;
+
+            &:nth-child(3n+0) {
+                margin-right: 0;
+            }
+
+
+            .Box1 {
+                border-bottom: 1px solid #edf2f8;
+
+                .Image {
+                    display: block;
+                    position: relative;
+                    margin: 43px auto 0px auto;
+                    height: 90px;
+                    width: 90px;
+                    border-radius: 50%;
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    -webkit-background-size: cover;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .LevelIcon {
+                    display: block;
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 50%;
+                    border: 4px solid #fff;
+                    position: absolute;
+                    bottom: 8px;
+                    right: 0px;
+
+                    &.yellow {
+                        background-color: @yellow;
+                    }
+
+                    &.blue {
+                        background-color: @blue;
+                    }
+
+                    &.red {
+                        background-color: @red;
+                    }
+
+                    &.green {
+                        background-color: @green;
+                    }
+                }
+
+                .Name {
+                    display: block;
+                    color: #0f5f5b;
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin-top: 22px;
+                }
+
+                .Position {
+                    color: #82a6a4;
+                    margin-top: 0px;
+                    margin-bottom: 24px;
+                }
+            }
+
+            .Box2 {
+                padding:20px;
+
+                .Title {
+                    font-size: 16px;
+                    color: #0f5f5b;
+                    font-weight: 600;
+                }
+
+                .Icons {
+                    display:block;
+                    margin:15px 0 18px 0px;
+
+                    .Icon {
+                    display:inline-block;
+                    font-family: 'Flaticons Stroke';
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+
+                    margin-right: 15px;
+                    border-radius: 50%;
+                    height: 35px;
+                    width: 35px;
+                    padding: 10px 0 0 1px;
+                    color: #fff;
+                    font-size: 14px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    &.yellow {
+                        background-color: @yellow;
+                    }
+
+                    &.orange {
+                        background-color: @orange;
+                    }
+
+                    &.blue {
+                        background-color: @blue;
+                    }
+
+                    &.red {
+                        background-color: @red;
+                    }
+
+                    &.gray {
+                        background-color: @gray;
+                    }
+
+                    &.green {
+                        background-color: @green;
+                    }
+
+
+                }
+
+                }
+
+                .Spec {
+                    display:block;
+                    color:#83a7a5;
+                    margin:6px 0;
+                }
+            }
+
+            .Box3, .Box4 {
+                border-top: 1px solid #edf2f8;
+                padding:20px 25px;
+                .TopIcon {
+                    display:block;
+                    font-size:16px;
+                    margin-bottom:5px;
+                }
+                .Title {
+                    font-size: 16px;
+                    color: #0f5f5b;
+                    font-weight: 600;
+                }
+                .checkboxlist {
+                    margin:10px 0 0 0;
+                    padding:0;
+                    list-style-type:none;
+
+                    li {
+                        display:block;
+                        text-align:left;
+                        color:#83a7a5;
+                        cursor:pointer;
+
+                        i {
+                            display:inline-block;
+                            width: 15px;                            height: 12px;                            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAIAAAAyIHCzAAAAcklEQVQoz82RvQ6AIAyEef831DiqicJQBoFWDd4kaPxj89Kl7QelnIox8rwO5JreVi3tgRRFtGImhbzuyFgXAkumwIwiWrKkA2okb8jJjTRN2vpEY+Lp1sOEwAASjSfKowD8kS7b8v0HyV+5wx/cKXJ+A3xRCRV2jIW0AAAAAElFTkSuQmCC);                            margin-right:8px;
+                        }
+
+                        &.space {
+                            height:10px;
+                        }
+
+                        &.active {
+                            color:#6fb048;
+                            i {
+                                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAIAAAAyIHCzAAABPElEQVQoz2P4////z99/X374dufZx5tPPsARkAsUBEoBFZx6tKd6e/i1F6cZgPxbTz+8+fjtx4+fv5DAj58/gYJAqUP3thZs9Mzf4FG/M5bh1Yfvbz58+4UDbL2yKn8DSGnl1pCH724wAG38/uPHlWenfvz8gaZ05/VlQHVAVL094smHu0AnMQCduPRsL1Bo4ekOZA2br8yHKK3aGvni06P/YABS3b0/ByIx50TT9x/ffv76ue7iDIhIw864U3dv/ocBkOqPX9/3HSyASM84VrPi3EQIu3l30quPT4EKUFQD7f38/dOkw6UQRRDUtif1zeeXQCkU1UBfQsLu6/cv049WQ5R27ct6/+UNKBx//AQqQKhGDkGgo+edbJ14qBjoNojI6w9fX3/4jlCNiJ2f2GPn15+/CNXExDwcAABYkcdOVcaEnAAAAABJRU5ErkJggg==);                            }
+
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+    }
 }
 
 .TContent.MyLearning {
@@ -1358,6 +1558,16 @@
             padding: 30px 50px 0px 50px;
 
             li {
+                margin: 0 21px 30px 0;
+            }
+        }
+    }
+
+    .TContent.MyCoach {
+        ul {
+            padding: 30px 50px 0px 50px;
+
+            .Coach {
                 margin: 0 21px 30px 0;
             }
         }
@@ -1401,6 +1611,20 @@
             li {
                 width: 204px;
                 margin: 0 10px 30px 0;
+            }
+        }
+    }
+
+    .TContent.MyCoach {
+        ul {
+            padding: 30px 50px 0px 50px;
+
+            .Coach {
+                width: 204px;
+                margin: 0 10px 30px 0;
+                .checkboxlist {
+                    font-size:11px;
+                }
             }
         }
     }
@@ -1462,6 +1686,18 @@
             padding: 20px 20px 0px 20px;
 
             li {
+                display: block;
+                width: 100%;
+                margin: 0 auto 20px auto;
+            }
+        }
+    }
+
+    .TContent.MyCoach {
+        ul {
+            padding: 20px 20px 0px 20px;
+
+            .Coach {
                 display: block;
                 width: 100%;
                 margin: 0 auto 20px auto;

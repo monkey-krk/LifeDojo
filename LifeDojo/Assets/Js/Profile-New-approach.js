@@ -31,5 +31,11 @@
 
     }
     
+    if ($(".checkboxlist").length > 0) {
+        $(".checkboxlist li").click(function (e) {
+            $(this).toggleClass("active");
+        });
+
+    }
 
 });

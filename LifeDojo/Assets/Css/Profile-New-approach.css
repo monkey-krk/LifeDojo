@@ -1021,6 +1021,183 @@
 .TContent.MyPlan .MyPlan-Calendar .Today .Description {
   color: rgba(255, 255, 255, 0.8);
 }
+.TContent.MyCoach {
+  background-color: #fafafa;
+}
+.TContent.MyCoach ul {
+  margin: 0;
+  padding: 30px 110px 0px 110px;
+  list-style: none;
+}
+.TContent.MyCoach ul .Coach {
+  display: inline-block;
+  position: relative;
+  margin: 0 60px 45px 0;
+  width: 270px;
+  background-color: #fff;
+  border: 1px solid #edf2f8;
+  border-radius: 5px;
+  text-align: center;
+}
+.TContent.MyCoach ul .Coach:nth-child(3n+0) {
+  margin-right: 0;
+}
+.TContent.MyCoach ul .Coach .Box1 {
+  border-bottom: 1px solid #edf2f8;
+}
+.TContent.MyCoach ul .Coach .Box1 .Image {
+  display: block;
+  position: relative;
+  margin: 43px auto 0px auto;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.TContent.MyCoach ul .Coach .Box1 .LevelIcon {
+  display: block;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+}
+.TContent.MyCoach ul .Coach .Box1 .LevelIcon.yellow {
+  background-color: #dccf43;
+}
+.TContent.MyCoach ul .Coach .Box1 .LevelIcon.blue {
+  background-color: #666bd6;
+}
+.TContent.MyCoach ul .Coach .Box1 .LevelIcon.red {
+  background-color: #f47564;
+}
+.TContent.MyCoach ul .Coach .Box1 .LevelIcon.green {
+  background-color: #6fb048;
+}
+.TContent.MyCoach ul .Coach .Box1 .Name {
+  display: block;
+  color: #0f5f5b;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 22px;
+}
+.TContent.MyCoach ul .Coach .Box1 .Position {
+  color: #82a6a4;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+.TContent.MyCoach ul .Coach .Box2 {
+  padding: 20px;
+}
+.TContent.MyCoach ul .Coach .Box2 .Title {
+  font-size: 16px;
+  color: #0f5f5b;
+  font-weight: 600;
+}
+.TContent.MyCoach ul .Coach .Box2 .Icons {
+  display: block;
+  margin: 15px 0 18px 0px;
+}
+.TContent.MyCoach ul .Coach .Box2 .Icons .Icon {
+  display: inline-block;
+  font-family: 'Flaticons Stroke';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 15px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  padding: 10px 0 0 1px;
+  color: #fff;
+  font-size: 14px;
+}
+.TContent.MyCoach ul .Coach .Box2 .Icons .Icon:last-child {
+  margin-right: 0px;
+}
+.TContent.MyCoach ul .Coach .Box2 .Icons .Icon.yellow {
+  background-color: #dccf43;
+}
+.TContent.MyCoach ul .Coach .Box2 .Icons .Icon.orange {
+  background-color: #e99537;
+}
+.TContent.MyCoach ul .Coach .Box2 .Icons .Icon.blue {
+  background-color: #666bd6;
+}
+.TContent.MyCoach ul .Coach .Box2 .Icons .Icon.red {
+  background-color: #f47564;
+}
+.TContent.MyCoach ul .Coach .Box2 .Icons .Icon.gray {
+  background-color: #adc4c3;
+}
+.TContent.MyCoach ul .Coach .Box2 .Icons .Icon.green {
+  background-color: #6fb048;
+}
+.TContent.MyCoach ul .Coach .Box2 .Spec {
+  display: block;
+  color: #83a7a5;
+  margin: 6px 0;
+}
+.TContent.MyCoach ul .Coach .Box3,
+.TContent.MyCoach ul .Coach .Box4 {
+  border-top: 1px solid #edf2f8;
+  padding: 20px 25px;
+}
+.TContent.MyCoach ul .Coach .Box3 .TopIcon,
+.TContent.MyCoach ul .Coach .Box4 .TopIcon {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.TContent.MyCoach ul .Coach .Box3 .Title,
+.TContent.MyCoach ul .Coach .Box4 .Title {
+  font-size: 16px;
+  color: #0f5f5b;
+  font-weight: 600;
+}
+.TContent.MyCoach ul .Coach .Box3 .checkboxlist,
+.TContent.MyCoach ul .Coach .Box4 .checkboxlist {
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+.TContent.MyCoach ul .Coach .Box3 .checkboxlist li,
+.TContent.MyCoach ul .Coach .Box4 .checkboxlist li {
+  display: block;
+  text-align: left;
+  color: #83a7a5;
+  cursor: pointer;
+}
+.TContent.MyCoach ul .Coach .Box3 .checkboxlist li i,
+.TContent.MyCoach ul .Coach .Box4 .checkboxlist li i {
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAIAAAAyIHCzAAAAcklEQVQoz82RvQ6AIAyEef831DiqicJQBoFWDd4kaPxj89Kl7QelnIox8rwO5JreVi3tgRRFtGImhbzuyFgXAkumwIwiWrKkA2okb8jJjTRN2vpEY+Lp1sOEwAASjSfKowD8kS7b8v0HyV+5wx/cKXJ+A3xRCRV2jIW0AAAAAElFTkSuQmCC);
+  margin-right: 8px;
+}
+.TContent.MyCoach ul .Coach .Box3 .checkboxlist li.space,
+.TContent.MyCoach ul .Coach .Box4 .checkboxlist li.space {
+  height: 10px;
+}
+.TContent.MyCoach ul .Coach .Box3 .checkboxlist li.active,
+.TContent.MyCoach ul .Coach .Box4 .checkboxlist li.active {
+  color: #6fb048;
+}
+.TContent.MyCoach ul .Coach .Box3 .checkboxlist li.active i,
+.TContent.MyCoach ul .Coach .Box4 .checkboxlist li.active i {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAIAAAAyIHCzAAABPElEQVQoz2P4////z99/X374dufZx5tPPsARkAsUBEoBFZx6tKd6e/i1F6cZgPxbTz+8+fjtx4+fv5DAj58/gYJAqUP3thZs9Mzf4FG/M5bh1Yfvbz58+4UDbL2yKn8DSGnl1pCH724wAG38/uPHlWenfvz8gaZ05/VlQHVAVL094smHu0AnMQCduPRsL1Bo4ekOZA2br8yHKK3aGvni06P/YABS3b0/ByIx50TT9x/ffv76ue7iDIhIw864U3dv/ocBkOqPX9/3HSyASM84VrPi3EQIu3l30quPT4EKUFQD7f38/dOkw6UQRRDUtif1zeeXQCkU1UBfQsLu6/cv049WQ5R27ct6/+UNKBx//AQqQKhGDkGgo+edbJ14qBjoNojI6w9fX3/4jlCNiJ2f2GPn15+/CNXExDwcAABYkcdOVcaEnAAAAABJRU5ErkJggg==);
+}
 /*#region Responsive */
 @media (min-width: 992px) and (max-width: 1199px) {
   .TContent.Progress .Badges ul li {
@@ -1038,6 +1215,12 @@
     padding: 30px 50px 0px 50px;
   }
   .TContent.Allies ul li {
+    margin: 0 21px 30px 0;
+  }
+  .TContent.MyCoach ul {
+    padding: 30px 50px 0px 50px;
+  }
+  .TContent.MyCoach ul .Coach {
     margin: 0 21px 30px 0;
   }
 }
@@ -1063,6 +1246,16 @@
   .TContent.Allies ul li {
     width: 204px;
     margin: 0 10px 30px 0;
+  }
+  .TContent.MyCoach ul {
+    padding: 30px 50px 0px 50px;
+  }
+  .TContent.MyCoach ul .Coach {
+    width: 204px;
+    margin: 0 10px 30px 0;
+  }
+  .TContent.MyCoach ul .Coach .checkboxlist {
+    font-size: 11px;
   }
 }
 @media (max-width: 767px) {
@@ -1100,6 +1293,14 @@
     padding: 20px 20px 0px 20px;
   }
   .TContent.Allies ul li {
+    display: block;
+    width: 100%;
+    margin: 0 auto 20px auto;
+  }
+  .TContent.MyCoach ul {
+    padding: 20px 20px 0px 20px;
+  }
+  .TContent.MyCoach ul .Coach {
     display: block;
     width: 100%;
     margin: 0 auto 20px auto;
