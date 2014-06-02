@@ -5,7 +5,7 @@ DONE - Front-page splash - essential to make it feel like a real website.
 
 DONE - Log in.  Essential to get them started.
 
-Choose a program.  Needed for their initial log in.
+DONE - Choose a program.  Needed for their initial log in.
 
 Contact Us.  Simple but important.
 
