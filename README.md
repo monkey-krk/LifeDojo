@@ -3,7 +3,7 @@ LifeDojo
 
 DONE - Front-page splash - essential to make it feel like a real website.
 
-Log in.  Essential to get them started.
+DONE - Log in.  Essential to get them started.
 
 Choose a program.  Needed for their initial log in.
 
