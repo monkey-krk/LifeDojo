@@ -1,0 +1,198 @@
+﻿html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background: url('/Assets/Img/Front/Index/Box1-bck.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #243441;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.Content {
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    .trow {
+        display: table-row;
+        width: 100%;
+
+        .cell {
+            display: table-cell;
+            height: 100%;
+            vertical-align: middle;
+
+            .Logo {
+                display: block;
+                margin: 0px auto 0 auto;
+                width: 160px;
+                height: 51px;
+                background-image: url(data:image/png;base64,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);
+            }
+
+            .Box {
+                display: inline-block;
+                text-align: center;
+                margin-top: 40px;
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 60px 0 0 0;
+                width: 550px;
+
+
+                .LoginForm {
+                    border-bottom:1px solid #cfe3e2;
+                    padding:0 75px;
+
+                    input[type=email], input[type=password] {
+                        display: block;
+                        margin: 0 auto;
+                        height: 60px;
+                        width: 100%;
+                        border: 1px solid #cfe3e2;
+                        border-radius: 5px;
+                        margin-bottom: 18px;
+                        padding: 13px 20px;
+                        font-family: 'Proxima Nova';
+                        color: #010706;
+                        font-weight: 600;
+                        font-size: 16px;
+
+                        &::-webkit-input-placeholder {
+                            font-family: 'Proxima Nova';
+                            color: #0f5f5c;
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+
+                        &:-moz-placeholder {
+                            font-family: 'Proxima Nova';
+                            color: #0f5f5c;
+                            font-weight: 600;
+                            font-size: 16px;
+                            opacity: 1;
+                        }
+
+                        &::-moz-placeholder {
+                            font-family: 'Proxima Nova';
+                            color: #0f5f5c;
+                            font-weight: 600;
+                            font-size: 16px;
+                            opacity: 1;
+                        }
+
+                        &:-ms-input-placeholder {
+                            font-family: 'Proxima Nova';
+                            color: #0f5f5c;
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+                    }
+                    .SubmitButton {
+                        display: block;
+                        margin: 30px auto;
+                        height: 60px;
+                        width: 100%;
+                        border-radius: 5px;
+                        border:none;
+                        background-color: #86be2d;
+                        color:#fff;
+                        font-size: 16px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        -moz-transition: all 0.15s ease-in-out;
+                        -o-transition: all 0.15s ease-in-out;
+                        -webkit-transition: all 0.15s ease-in-out;
+                        transition: all 0.15s ease-in-out;
+
+                        &:hover {
+                            background-color: #78aa29;
+                        }
+                    }
+                }
+
+                a {
+                    display:inline-block;
+                    width:49%;
+                    text-align:center;
+                    color:#67b64d;
+                    padding:30px 0;
+
+                    &:hover {
+                        color:#52943c;
+                        //text-decoration:none;
+                    }
+                }
+            }
+
+            .Back {
+                padding-top:40px;
+                a {
+                    color:#fff;
+                    opacity:0.75;
+                    i {
+                        display:inline-block;
+                        margin-right:5px;
+                    }
+                    &:hover {
+                        text-decoration:none;
+                        opacity:1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .Content {
+        .trow {
+            .cell {
+                .Box {
+                    margin-top: 30px;
+                    padding: 20px 0 0 0;
+                    width: 300px;
+
+                    .LoginForm {
+                        padding: 0 20px;
+
+                        input[type=email], input[type=password] {
+                            height: 45px;
+                            margin-bottom: 13px;
+                            padding: 10px 15px;
+                            font-size: 16px;
+                        }
+
+                        .SubmitButton {
+                            margin: 18px auto;
+                            height: 50px;
+                        }
+                    }
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        padding: 10px 0;
+                        &:last-child {
+                            padding: 0 0 10px 0;
+                        }
+                    }
+                }
+                .Back {
+                    padding-top:30px;
+                }
+            }
+        }
+    }
+}

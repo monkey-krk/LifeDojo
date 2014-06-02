@@ -1,8 +1,4 @@
-﻿/// <reference path="../../External/jQuery/jquery-2.1.0.min.js" />
-
-
-$(document).ready(function () {
-
+﻿$(document).ready(function () {
 
     if ($(".IconsBox").length > 0) {
         if ($(".IconsContent").length > 0) {
@@ -31,10 +27,5 @@ $(document).ready(function () {
 
         }
     }
-
-
-
-    
-
 
 });
