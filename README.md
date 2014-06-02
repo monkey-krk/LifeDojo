@@ -7,11 +7,11 @@ DONE - Log in.  Essential to get them started.
 
 DONE - Choose a program.  Needed for their initial log in.
 
-Contact Us.  Simple but important.
-
-About Us.
+DONE - Contact Us.  Simple but important.
 
 DONE - My Coach.  Important to have within 5 days.
+
+About Us.
 
 Our Solution.
 
