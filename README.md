@@ -15,7 +15,7 @@ DONE - About Us.
 
 DONE - Our Solution.
 
-Add Ally pop up.  Needed within 7 days.
+DONE - Add Ally pop up.  Needed within 7 days.
 
 Remaining take actions for programs.
 
