@@ -11,12 +11,14 @@ DONE - Contact Us.  Simple but important.
 
 DONE - My Coach.  Important to have within 5 days.
 
-About Us.
+DONE - About Us.
 
 DONE - Our Solution.
 
 Add Ally pop up.  Needed within 7 days.
 
 Remaining take actions for programs.
+
+
 
 Clean up admin page, or tell us how to pay for full version so it's cleaned up, doesn't show link to the plugin/package
