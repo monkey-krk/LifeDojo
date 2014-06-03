@@ -1309,3 +1309,190 @@
 /*#endregion */
 /*#endregion */
 /*#endregion */
+/*#region PopUp Add Ally */
+.PopUpAddAlly {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+}
+.PopUpAddAlly .PopUpAddAllyBox {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 570px;
+  margin-left: -285px;
+  height: 700px;
+  margin-top: -350px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 9999px rgba(173, 196, 195, 0.6), 1px 1px 3px #abc0bd;
+  overflow: hidden;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-size: 20px;
+  color: #adc4c3;
+  cursor: pointer;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Close:hover {
+  color: #83a6a5;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header {
+  padding: 40px 40px 30px 40px;
+  border-bottom: 1px solid #edf2f8;
+  background-color: #fff;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header .Title {
+  color: #6faf47;
+  font-size: 25px;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header .SubTitle {
+  color: #82a6a4;
+  font-size: 14px;
+  margin: 8px 0 22px 0;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header .SearchBox {
+  position: relative;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header .SearchBox input {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #cfe3e2;
+  border-radius: 5px;
+  padding: 20px 20px 20px 50px;
+  font-size: 16px;
+  color: #0f5f5c;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header .SearchBox input:focus {
+  background-color: #fff;
+  color: #0f5f5c;
+  font-weight: normal;
+  outline: none;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header .SearchBox input::-webkit-input-placeholder {
+  font-family: 'Proxima Nova';
+  color: #bad6d5;
+  font-weight: normal;
+  font-size: 16px;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header .SearchBox input:-moz-placeholder {
+  font-family: 'Proxima Nova';
+  color: #bad6d5;
+  font-weight: normal;
+  font-size: 16px;
+  opacity: 1;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header .SearchBox input::-moz-placeholder {
+  font-family: 'Proxima Nova';
+  color: #bad6d5;
+  font-weight: normal;
+  font-size: 16px;
+  opacity: 1;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header .SearchBox input:-ms-input-placeholder {
+  font-family: 'Proxima Nova';
+  color: #bad6d5;
+  font-weight: normal;
+  font-size: 16px;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Header .SearchBox i {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 16px;
+  color: #83a7a5;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Body {
+  background-color: #fafafa;
+  border-bottom: 1px solid #edf2f8;
+  padding: 20px 0px 10px 40px;
+  height: 400px;
+  overflow-y: auto;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Body .Title {
+  color: #acc4c3;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Body .AlliesList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Body .AlliesList .Ally {
+  position: relative;
+  display: inline-block;
+  width: 148px;
+  height: 148px;
+  background-color: #fff;
+  margin-right: 19px;
+  margin-bottom: 13px;
+  border: 1px solid #edf2f8;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Body .AlliesList .Ally:nth-child(3n) {
+  margin-right: 0px;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Body .AlliesList .Ally .Image {
+  display: block;
+  margin: 25px auto 20px auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Body .AlliesList .Ally .Name {
+  text-align: center;
+  color: #0f5f5b;
+  font-size: 16px;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Body .AlliesList .Ally.active {
+  border: 1px solid #cfe3e1;
+  -moz-box-shadow: 1px 2px 6px rgba(120, 151, 149, 0.17);
+  -webkit-box-shadow: 1px 2px 6px rgba(120, 151, 149, 0.17);
+  box-shadow: 1px 2px 6px rgba(120, 151, 149, 0.17);
+}
+.PopUpAddAlly .PopUpAddAllyBox .Body .AlliesList .Ally.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 29px;
+  height: 29px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAABZklEQVRIx73Sy0oDMRSA4dn6Dt71YVQqLhR8ABGXXkBEXAnF7nwCF1ZRcCHUy7RCa12oICqigp2i1aktFkqhRQtF0PGYEwiMdS6Z6SSBf5GE8AUSBQDaDjPrD9OxARBUnZQmhUgKphAUaydwTiDMCptRmfCwGcU6JMDpZjQweHZvCC4LKbh9O23e+7BCGfzsF5yJDcK5Hgccd6Wzf/t2KDccOZ6CldTkn7WT3C4FtfI1zO2HPKFYpxtcbZSh/lmDcHKCzo+yWxR8qtzD/MGI5Rk3lMEvdujaxTJ8G19Qa1Qg+bhDwXw1CwvqqO1FeVAKq5moLRy9ioDxY1Cw9K7Dojrm+CS8qCu8fbNKwaXEuOtH84JiXU4wb15RBuuy0ZZhvyjW7RduBaVwXNvIy0Z9wUGgnuGgUKyHFw4SZfCrbJQLFoFivU6wKJTBBdmoLSwatYRloFifGZaFMrgoG6VwQtssykax/l9HwRFXN4q2IgAAAABJRU5ErkJggg==);
+}
+.PopUpAddAlly .PopUpAddAllyBox .Footer {
+  background-color: #fff;
+  text-align: center;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Footer .PopUpAddAllyButton {
+  display: inline-block;
+  margin-top: 27px;
+  background-color: #6fb048;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #fff;
+  font-weight: bold;
+}
+.PopUpAddAlly .PopUpAddAllyBox .Footer .PopUpAddAllyButton:hover {
+  background-color: #69a744;
+  text-decoration: none;
+}
+/*#endregion */

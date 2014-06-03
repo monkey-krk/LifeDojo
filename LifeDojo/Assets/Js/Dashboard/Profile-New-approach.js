@@ -38,4 +38,25 @@
 
     }
 
+    if ($(".PopUpAddAlly").length > 0) {
+        $(".AlliesAddBtn").click(function (e) {
+            $(".PopUpAddAlly").show();
+            e.preventDefault();
+        });
+        $(".PopUpAddAllyBox .Close").click(function (e) {
+            $(".PopUpAddAlly").hide();
+        })
+        $(".AlliesList .Ally").click(function () {
+            $(this).toggleClass("active");
+        })
+        $(".SearchAlly").keyup(function () {
+            //do some logic ... get Ally list data from API and render AlliesList with template engine (eg. mustache)
+        })
+        $(".PopUpAddAllyButton").click(function (e) {
+            //do some select -> insert to db logic ...
+            $(".PopUpAddAlly").hide();
+            e.preventDefault();
+        })
+    }
+
 });
