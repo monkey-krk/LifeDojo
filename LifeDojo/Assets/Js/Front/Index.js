@@ -11,7 +11,7 @@
                 $(".IconContent[data-boxid='" + BoxID + "']").addClass("active");
             }
 
-            $(".IconBox").click(function (e) {
+            $(".IconBox").mouseenter(function (e) {
                 var BoxID = $(this).attr("data-boxid");
                 ShowIconBox(BoxID);
                 clearInterval(Slider);
