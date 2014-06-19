@@ -83,7 +83,7 @@
 .Box2 .IconsBox .IconBox .Title {
   color: #cdddab;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   padding: 30px 0 0 0;
 }
@@ -95,7 +95,7 @@
 }
 .Box2 .IconsBox .IconBox.active .Title {
   color: #6fb046;
-  font-weight: bold;
+  font-weight: normal;
 }
 .Box2 .IconsContent {
   padding: 60px 0;
@@ -109,13 +109,14 @@
 .Box2 .IconsContent .IconContent .Title {
   color: #333;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: lighter;
   padding-bottom: 20px;
 }
 .Box2 .IconsContent .IconContent p {
   color: #878787;
   font-size: 18px;
   line-height: 1.6;
+  font-weight: lighter;
 }
 .Box2 .IconsContent .IconContent .VideoBox {
   float: right;
@@ -129,6 +130,18 @@
 .Box2 .IconsContent .IconContent .VideoBox .VideoSize {
   width: 356px !important;
   height: 200px !important;
+}
+.Box2 .IconsContent .IconContent .ImageBox {
+  position: relative;
+  float: right;
+  width: 356px;
+  height: 200px;
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 5px;
 }
 @media (max-width: 767px) {
   .Box2 .IconsBox {
@@ -147,6 +160,9 @@
   .Box2 .IconsContent .IconContent .VideoBox {
     display: none;
   }
+  .Box2 .IconsContent .IconContent .ImageBox {
+    display: none;
+  }
 }
 /*#endregion */
 /*#region Box3 */
@@ -161,7 +177,7 @@
 .Box3 .Title {
   color: #333;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.1;
 }
 .Box3 p {
@@ -170,6 +186,7 @@
   line-height: 1.4;
   padding-top: 30px;
   padding-right: 30px;
+  font-weight: lighter;
 }
 .Box3 .WhitepaperBox {
   position: relative;
@@ -215,13 +232,14 @@
   background-color: #86be2d;
   color: #fff;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: lighter;
   border: none;
   border-radius: 0 0 5px 5px;
   padding: 20px 0;
 }
 .Box3 .WhitepaperBox .WhitepaperForm button i {
   margin-right: 10px;
+  font-size: 16px;
 }
 .Box3 .WhitepaperBox .PapersLeft {
   display: block;
@@ -286,6 +304,7 @@
   font-size: 25px;
   line-height: 1.7;
   font-style: italic;
+  font-weight: normal;
 }
 .Box4 .ContinueReading {
   color: #67b64d;
@@ -306,6 +325,7 @@
   color: #333;
   font-size: 30px;
   padding-top: 7px;
+  font-weight: normal;
 }
 .Box4 .EnterBtn {
   display: inline-block;
@@ -314,7 +334,7 @@
   padding: 18px 35px 17px 35px;
   color: #fff;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: normal;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   -webkit-transition: all 0.15s ease-in-out;

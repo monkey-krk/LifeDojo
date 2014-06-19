@@ -46,11 +46,13 @@
   font-size: 60px;
   padding-bottom: 16px;
   padding-top: 15px;
+  font-weight: lighter;
 }
 .Box2 .R1 .Text {
   color: #888888;
   font-size: 18px;
   line-height: 1.5;
+  font-weight: lighter;
 }
 .Box2 .R2 {
   border-top: 3px solid #f0f3ec;
@@ -60,14 +62,17 @@
 .Box2 .R2 .Title {
   color: #333;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: normal;
   padding-bottom: 15px;
   padding-top: 30px;
+  text-align: center;
 }
 .Box2 .R2 .Text {
   color: #878787;
   font-size: 18px;
   line-height: 1.5;
+  text-align: left;
+  font-weight: lighter;
 }
 .Box2 .Team {
   padding-top: 0px;
@@ -113,7 +118,7 @@
   position: absolute;
   left: 20px;
   bottom: 30px;
-  font-weight: 600;
+  font-weight: lighter;
   -webkit-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
@@ -125,6 +130,7 @@
   bottom: 12px;
   -webkit-text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  font-weight: lighter;
 }
 .Box2 .Team .Member .Description {
   display: none;
@@ -142,6 +148,7 @@
   font-size: 18px;
   line-height: 1.6;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: lighter;
 }
 .Box2 .Team .Member.active .Image {
   -webkit-filter: grayscale(0%);
@@ -172,14 +179,17 @@
 .Box2 .R3 .Title {
   color: #333;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: normal;
   padding-bottom: 15px;
   padding-top: 30px;
+  text-align: center;
 }
 .Box2 .R3 .Text {
   color: #878787;
   font-size: 18px;
   line-height: 1.5;
+  text-align: left;
+  font-weight: lighter;
 }
 .Box2 .Programs {
   padding-top: 0px;
@@ -212,7 +222,7 @@
 .Box2 .Programs .Program .Image .Title {
   color: #fff;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: lighter;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -234,6 +244,7 @@
   font-size: 18px;
   line-height: 1.6;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: lighter;
 }
 .Box2 .Programs .Program.active .Image:after {
   content: " ";
@@ -259,6 +270,7 @@
   color: #333;
   font-size: 30px;
   padding-top: 7px;
+  font-weight: normal;
 }
 .Box2 .R4 .EnterBtn {
   display: inline-block;
@@ -267,7 +279,7 @@
   padding: 18px 45px 17px 45px;
   color: #fff;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: normal;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   -webkit-transition: all 0.15s ease-in-out;

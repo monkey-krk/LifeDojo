@@ -93,7 +93,7 @@
             .Title {
                 color: #cdddab;
                 font-size: 16px;
-                font-weight: bold;
+                font-weight: normal;
                 text-transform: uppercase;
                 padding: 30px 0 0 0;
             }
@@ -109,7 +109,7 @@
 
                 .Title {
                     color: #6fb046;
-                    font-weight: bold;
+                    font-weight: normal;
                 }
             }
         }
@@ -128,7 +128,7 @@
             .Title {
                 color: #333;
                 font-size: 30px;
-                font-weight: bold;
+                font-weight: lighter;
                 padding-bottom: 20px;
             }
 
@@ -136,6 +136,7 @@
                 color: #878787;
                 font-size: 18px;
                 line-height: 1.6;
+                font-weight: lighter;
             }
 
             .VideoBox {
@@ -152,6 +153,19 @@
                     width: 356px !important;
                     height: 200px !important;
                 }
+            }
+
+            .ImageBox {
+                position: relative;
+                float: right;
+                width: 356px;
+                height:200px;
+                background: no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                border-radius:5px;
             }
         }
     }
@@ -174,6 +188,9 @@
                 .VideoBox {
                    display:none;
                 }
+                .ImageBox {
+                   display:none;
+                }
             }
         }
     }
@@ -194,7 +211,7 @@
     .Title {
         color: #333;
         font-size: 30px;
-        font-weight: bold;
+        font-weight: normal;
         line-height: 1.1;
     }
 
@@ -204,6 +221,7 @@
         line-height: 1.4;
         padding-top: 30px;
         padding-right: 30px;
+        font-weight:lighter;
     }
 
 
@@ -247,13 +265,14 @@
                 background-color:#86be2d;
                 color:#fff;
                 font-size:18px;
-                font-weight:600;
+                font-weight:lighter;
                 border:none;
                 border-radius:0 0 5px 5px;
                 padding:20px 0;
 
                 i {
                     margin-right:10px;
+                    font-size:16px;
                 }
             }
         }
@@ -325,6 +344,7 @@
         padding:50px 95px;
         color: #878787;        font-size: 25px;        line-height:1.7;
         font-style:italic;
+        font-weight:normal;
     }
 
     .ContinueReading {
@@ -346,6 +366,7 @@
 
     .Have {
         color: #333;        font-size: 30px;        padding-top:7px;
+        font-weight:normal;
     }
 
     .EnterBtn {
@@ -355,7 +376,7 @@
         padding: 18px 35px 17px 35px;
         color: #fff;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: normal;
         -moz-transition: all 0.15s ease-in-out;
         -o-transition: all 0.15s ease-in-out;
         -webkit-transition: all 0.15s ease-in-out;
