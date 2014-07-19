@@ -59,4 +59,19 @@
         })
     }
 
+    if ($(".PopUpConfirmMeeting").length > 0) {
+        $(".TContent.MyCoach ul li").click(function (e) {
+            $(".PopUpConfirmMeeting").show();
+            e.preventDefault();
+        });
+        $(".PopUpConfirmMeetingBox .Close").click(function (e) {
+            $(".PopUpConfirmMeeting").hide();
+        })
+        $(".PopUpConfirmMeetingButton").click(function (e) {
+            //do some select -> insert to db logic ...
+            $(".PopUpConfirmMeeting").hide();
+            e.preventDefault();
+        })
+    }
+
 });

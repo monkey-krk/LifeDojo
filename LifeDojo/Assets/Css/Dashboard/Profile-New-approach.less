@@ -304,6 +304,7 @@
     position: relative;
     margin-top: 30px;
     min-height: 370px;
+    overflow: visible;
 
     header {
         min-height: 50px;
@@ -315,57 +316,161 @@
 
         .Weeks {
             display: inline-block;
-            margin-top: 1px;
+            margin: 2px 0 0 0;
+            padding: 0;
+            list-style: none;
 
-            i {
+
+            .Week {
+                position: relative;
                 display: inline-block;
                 margin: 0;
                 padding: 0;
                 width: 37px;
                 margin-right: -4px;
 
-                &:before {
-                    display: inline-block;
-                    content: "";
-                    height: 3px;
-                    width: 22px;
-                    background-color: #d3dede;
-                    margin-bottom: 6px;
-                }
+                i {
+                    &:before {
+                        display: inline-block;
+                        content: "";
+                        height: 3px;
+                        width: 22px;
+                        background-color: #d3dede;
+                        margin-bottom: 6px;
+                        cursor: default;
+                    }
 
-                &:after {
-                    display: inline-block;
-                    content: "";
-                    height: 15px;
-                    width: 15px;
-                    background-color: #d3dede;
-                    border-radius: 15px;
+                    &:after {
+                        display: inline-block;
+                        content: "";
+                        height: 15px;
+                        width: 15px;
+                        background-color: #d3dede;
+                        border-radius: 15px;
+                        cursor: default;
+                    }
                 }
 
                 &:first-child {
                     width: 15px;
 
-                    &:before {
-                        width: 0px;
+                    i {
+                        &:before {
+                            display: none;
+                        }
                     }
                 }
 
                 &.completed {
-                    &:before {
-                        background-color: #6fb048;
-                    }
+                    i {
+                        &:before {
+                            background-color: #6fb048;
+                        }
 
-                    &:after {
-                        background-color: #6fb048;
-                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAQAAADSmGXeAAAATElEQVQYGQXBoQ3CAAAAwU9ICAHVoBigngXw3YshOgCGEdA4bCUsgEPVnOIuSZLR25S9neTs6+GQm5eji5+7rXKy+FjNNlIyeLpK0h9RXzJJQHZq8AAAAABJRU5ErkJggg==);
-                        background-position: center center;
-                        background-repeat: no-repeat;
+                        &:after {
+                            background-color: #6fb048;
+                            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAQAAADSmGXeAAAATElEQVQYGQXBoQ3CAAAAwU9ICAHVoBigngXw3YshOgCGEdA4bCUsgEPVnOIuSZLR25S9neTs6+GQm5eji5+7rXKy+FjNNlIyeLpK0h9RXzJJQHZq8AAAAABJRU5ErkJggg==);
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                        }
                     }
                 }
 
                 &.active {
-                    &:after {
-                        background-color: #0f5f5c;
+                    i {
+                        &:after {
+                            background-color: #0f5f5c;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .DropdownBox {
+                        display: block;
+                    }
+                }
+
+                .DropdownBox {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    margin-top: 33px;
+                    right: -193px;
+                    width: 400px;
+                    background-color: #fff;
+                    border: 1px solid rgba(173,196,195,0.3);
+                    box-shadow: 0 0 7px rgba(173,196,195,0.2);
+                    z-index: 9999;
+
+                    &:before {
+                        display: block;
+                        content: "";
+                        margin: -13px auto;
+                        margin-top: -13px;
+                        width: 21px;
+                        height: 13px;
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAANCAYAAABGkiVgAAAA6ElEQVQ4y63TTQ7BQBjG8bcisbBAJL4i8bEQxC1Y1ccR2LkJTuMUbDkALiDEjoW2xjPJs1FTUTXJfzN955dJ2spyvbJQDMVRAiVRCmVRHpVQmZW4l+VMkmfiNCyllIgBTKMckRrqojGaoB73ypxJm2DxgRnepIIaqL897BeO617QebPfzbBn81mFsxk/LD6wgKqoiYYa9B6Pm+LyPO9KeMCZKs+8wGIAW2jkBw3wkLNvsIQBv4UlLPgNLHyb7TDgB1hbRfkVDIC1VZcoYADcEYDzKKABtkV/2OpP6+46J/3n/Rd1nCPQ6ROwSl6zRTBqbAAAAABJRU5ErkJggg==);
+                    }
+
+                    .Header {
+                        color: #83a7a5;
+                        padding: 20px 20px 4px 20px;
+                        margin-top: 13px;
+
+                        .fl {
+                            float: left;
+                        }
+
+                        .fr {
+                            float: right;
+                        }
+                    }
+
+                    .BigWeek {
+                        margin-top: 32px;
+                        border-top: 1px solid #edf2f8;
+                        height: 32px;
+                        overflow: visible;
+
+                        .No {
+                            background-color: #fff;
+                            border: 2px solid #d3dede;
+                            border-radius: 50%;
+                            width: 64px;
+                            height: 64px;
+                            margin: -32px auto 0 auto;
+                            font-size: 24px;
+                            color: #adc4c3;
+                            text-align: center;
+                            padding-top: 12px;
+                        }
+                    }
+
+                    .TasksList {
+                        margin: 5px 0 0 0;
+                        padding: 0;
+                        list-style: none;
+
+                        li {
+                            display: block;
+                            padding: 13px 20px;
+                            color: #0f5f5c;
+                            border-bottom: 1px solid #edf2f8;
+
+                            a {
+                                color: #0f5f5c;
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: #000;
+                                    text-decoration: none;
+                                }
+                            }
+
+                            &:last-child {
+                                border-bottom: 1px solid transparent;
+                            }
+                        }
                     }
                 }
             }
@@ -383,8 +488,8 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        overflow-y: auto;
         max-height: 460px;
+        overflow-y: auto;
 
         li {
             display: block;
@@ -1909,6 +2014,162 @@
             text-align: center;
 
             .PopUpAddAllyButton {
+                display: inline-block;
+                margin-top: 27px;
+                background-color: #6fb048;
+                border-radius: 5px;
+                padding: 10px 30px;
+                color: #fff;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: #69a744;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+/*#endregion */
+
+/*#region PopUp Confirm Meeting */
+
+.PopUpConfirmMeeting {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+
+    .PopUpConfirmMeetingBox {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 400px;
+        margin-left: -200px;
+        height: 510px;
+        margin-top: -255px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 0 9999px rgba(173, 196, 195, 0.6), 1px 1px 3px #abc0bd;
+
+        .Close {
+            position: absolute;
+            top: 4px;
+            right: 6px;
+            font-size: 20px;
+            color: #adc4c3;
+            cursor: pointer;
+
+            &:hover {
+                color: #83a6a5;
+            }
+        }
+
+        .Header {
+            padding: 30px 40px;
+            border-bottom: 1px solid #edf2f8;
+            background-color: #fff;
+            border-radius: 5px 5px 0 0;
+
+            .Title {
+                color: #6faf47;
+                font-size: 25px;
+            }
+
+            .Image {
+                display: block;
+                position: relative;
+                margin: 25px auto 0px auto;
+                height: 90px;
+                width: 90px;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .Name {
+                display: block;
+                color: #0f5f5b;
+                font-size: 22px;
+                font-weight: 600;
+                margin-top: 22px;
+            }
+
+            .Position {
+                color: #82a6a4;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .Body {
+            background-color: #fafafa;
+            border-bottom: 1px solid #edf2f8;
+            padding: 20px 0px 10px 0px;
+            height: 130px;
+            width: 100%;
+
+            .Title {
+                display: block;
+                color: #acc4c3;
+                font-size: 13px;
+                margin-bottom: 16px;
+                margin-left: 40px;
+            }
+
+            .DropWrapper {
+                text-align: center;
+            }
+
+            .MeetingTimeSelect {
+                display: block;
+                min-width: 150px;
+                height: 40px;
+                margin: 0 auto;
+                padding: 6px 20px;
+                padding-top: 9px;
+                color: #83a7a5;
+                border-color: #83a7a5;
+                background-color: #fff;
+                box-shadow: none;
+
+                &.dropdown-toggle {
+                    padding: 6px 16px;
+                    padding-top: 5px;
+                    border-color: #edf2f8;
+                    color: #83a7a5;
+                }
+
+                .caret {
+                    margin-left: 10px;
+                    margin-bottom: 3px;
+                }
+
+                &:hover {
+                    color: #6fb048;
+                    border-color: #6fb048;
+                    background-color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .Footer {
+            background-color: #fff;
+            text-align: center;
+
+            .PopUpConfirmMeetingButton {
                 display: inline-block;
                 margin-top: 27px;
                 background-color: #6fb048;
